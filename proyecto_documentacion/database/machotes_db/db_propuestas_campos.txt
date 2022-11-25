@@ -1,0 +1,94 @@
+Tabla Cliente________________________________________________________________________________________________
+*id_cliente int 
+*id_pedido int 
+*Nombre varchar (10)
+*Apellidos varchar (10)
+*Rol char (2)
+*Tipo de cliente varchar (15) --En caso de que se implemente trajetas de cliente frecuente o algo asi.
+*Numero_Telefono varchar(8)--sin extencio 
+*Correo varchar (30)
+*DUI varchar (10)--contando el guion 
+*Fecha_Inicio_de_sesion datetime
+
+Tabla Pedido________________________________________________________________________________
+*id_pedido int
+*id_cliente int
+*id_producto int
+*tipo_de_despacho varchar (10)--Brindando dos opciones: Local o Recoger pedido.
+*Tipo_de_cliente varchar (15) -- Por si se aplica oferta de cliente frecuente.
+*Estado_de_pedido char(2) --Puden ser Activo= A, En proceso= P, Finalizado=F, Dspachado=D
+
+Tabla Categorias_________________________
+*id_categoria int
+*Nombre_categoria varchar(30)
+*Unidades_Stock int
+
+Tabla productos_________________________________________________________________________________________
+*id_productos int
+*id_categoria int 
+*precio decimal(6,2)--este seria precio para cliente
+*disponibilidad char (2) -- Disponible= D, Agotado= A
+*distribuidor varchar (15)
+*costo_de_compra decimal(6,2)--este espacio seria para tener el precio del producto para la pupuseria
+
+Tabla Reserva__________
+*id_Reservas int
+*id_Cliente
+*Fecha datetime
+*horas_Reserva int 
+*n_Mesa int 
+*n_personas_mesa int
+
+Tabla Mesa________________
+*id_Mesas int 
+*id_Reservas int
+*id_pedido int
+*disponibilidad char (2)
+
+Tabla Comentario_______________________________________________________________________________________________________________________________________
+*id_comenatario int
+*id_Cliente int 
+*id_pedido int
+*Fecha datetime
+*tipo_de_comentario var (2) --Se podria decir que este orientada a los departamentos adentro de la pupuseria como: Despacho, Limpieza, producto
+
+Tabla Factura(En Linea)______________
+*id_Factura int 
+*id_Cliente int
+*id_pedido int
+total decimal (6,2)
+*Fecha datatime
+
+Tabla Factura (Local)______________________
+*id_Factura int 
+*id_Cliente int
+*id_pedido int
+*id_Mesas int 
+*id_Reservas int -- si se cuenta con ello 
+*Fecha datatime
+
+Tabla pago
+*id_pago int
+*id_Factura int
+*dinero_resivido decimal (6,2)
+*cambio decimal (6,2)
+
+Tabla despacho
+*id_despacho int
+*id_pago int 
+*id_pedido int 
+*Tipo_despacho varchar (10)
+*hora_y_fecha_despacho datetime
+
+
+
+
+
+
+
+
+
+
+
+
+

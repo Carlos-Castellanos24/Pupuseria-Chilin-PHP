@@ -1,0 +1,698 @@
+/* 
+==============================
+Universales
+==============================
+*/
+* {
+ margin: 0;
+ padding: 0;
+ -webkit-box-sizing: border-box;
+ -moz-box-sizing: border-box;
+ box-sizing: border-box;
+}
+:root {
+ --bg-fondo: #e5e4e4;
+ --rojo-alerta: #ff9090;;
+ --naranja-botones: #f6a11b;
+ --negro-letras: #1d1d1b;
+ --bg-oscuro: #18223b;
+ --blanco-default: #fff;
+}
+body {
+ font-size: 2.0em;
+ font-family: 'Poppins', sans-serif;
+ background-color: var(--bg-fondo);
+ margin-top: 10px;
+}
+div.form-group {
+ margin: 12px 10px 0px 10px;
+}
+div.form-group label {
+ font-size: 0.8em;
+ display: table-cell;
+ padding-left: 20px;
+}
+div.form-group input {
+ width: 90%;
+ height: 50px;
+ border: 2px solid var(--bg-fondo);
+ border-radius: 7px;
+ background-color: #fff;
+}
+div.error {
+ width: 90%;
+ height: 50px;
+ border: 2px solid red;
+ border-radius: 7px;
+}
+div.form-group input::placeholder {
+ font-weight: lighter;
+ padding-left: 10px;
+ color: var(--bg-fondo);
+ font-size: 0.9em;
+}
+a.volver {
+ text-decoration: none;
+ color: var(--negro-letras);
+ font-size: 0.7em;
+	padding-bottom: 20px;
+	position: fixed;
+	right: 0px;
+	left: 0px;
+	display: block;
+	bottom: 0px;
+}
+section.mini_alerta p{
+ border: 1px solid red;
+ margin: 5px 20px;
+ padding: 10px;
+ font-size: 0.6em;
+ text-align: center;
+ border-radius: 10px;
+ background-color: var(--rojo-alerta);
+}
+section.mini_alerta a {
+	text-decoration: none;
+}
+p.registro{
+	border: 1px solid green;
+ margin: 5px 20px;
+ padding: 10px;
+ font-size: 0.6em;
+ text-align: center;
+ border-radius: 10px;
+ background-color: #00e059;
+}
+div.registro img {	
+ width: 50%;
+ padding: 0px;
+ float: left;
+}
+div.registro i.fa-user {
+ float: right;
+ padding: 10px;
+ font-size: 1.3em;
+}
+div.registro_arriba img {
+ width: 100%;
+}
+span.nombre_cliente {
+	font-size: 25px;
+	padding-top: 15px;
+	font-weight: bold;
+	display: inline-block;
+}
+span.nombre_cliente > a {
+	font-size: 15px;
+	text-decoration: none;
+	color: var(--negro-letras);
+}
+div.nombre_us {
+	color: var(--negro-letras);
+	text-align: right;
+}
+
+/* 
+==============================
+footer.php
+==============================
+*/
+footer {
+	margin: 30px 0px;
+}
+
+
+/* 
+==============================
+registro.php
+==============================
+*/
+div.contenedor{
+ text-align: center;
+}
+p.campos_alerta{
+ color: red;
+ margin: 0px 0px 0px 6%;
+ padding: 0px 10px 0px 10px;
+ font-size: 0.5em;
+ text-align: left;
+}
+div.aceptar {
+ padding: 20px 0px 0px 30px;
+ font-weight: bold;
+ display: inline-flex;
+ position: relative;
+}
+div.aceptar > label {
+ margin-left: 5px;
+ margin-block-start: auto;
+ color: #1d1d1b;
+ font-size: 0.5em;
+ text-align: left;
+}
+div.aceptar>input {
+ height: 25px;
+ width: 25px;
+ border: 1px solid #34495E;
+ border-radius: 4px;
+ outline: none;
+ cursor: pointer;
+}
+
+div.enviar {
+ font-size: 0.8em;
+}
+div.enviar button[type=submit]{
+ background-color: var(--naranja-botones);
+ margin: 20px 0px;
+ padding: 10px 30px;
+ border: none;
+ width: 90%;
+ border-radius: 7px;
+}
+
+/* login */
+div.login i.fa-user {
+	padding: 30px 20px 50px 0px;
+ float: right;
+ font-size: 1.3em;
+}
+
+div.login_arriba img {
+	display: block;
+	margin: 0px auto 60px auto;
+ width: 90%;
+}
+
+p.campos_clave{
+	color: var(--negro-letras);
+	font-weight: bold;
+ margin: 5px 0px 0px 2%;
+ font-size: 0.5em;
+ text-align: left;
+ margin-bottom: 30px;
+}
+
+.formulario .icono {
+	padding: 15px;
+	text-align: center;
+	width: 50px;
+ height: 50px;
+	max-height: 50px
+	font-size: 0.5em;
+	line-height: 18px;
+	background: #ffffff;
+	color: var(--negro-letras);
+}
+
+.formulario .icono.izquierda {
+	-webkit-border-radius: 3px 0 0 3px;
+	-moz-border-radius: 3px 0 0 3px;
+	-ms-border-radius: 3px 0 0 3px;
+	-o-border-radius: 3px 0 0 3px;
+	border-radius: 3px 0 0 3px;
+}
+
+.formulario .telefono,
+.formulario .passwordlogin {
+	width: calc(100% - 52px);
+	-webkit-border-radius: 0 3px 3px 0;
+	-moz-border-radius: 0 3px 3px 0;
+	-ms-border-radius: 0 3px 3px 0;
+	-o-border-radius: 0 3px 3px 0;
+	border-radius: 0 3px 3px 0;
+	border: none;
+}
+
+div.login-in {
+ width: 90%;
+ margin: 0px auto;
+}
+
+div.login-in label {
+	font-size: 0.8em;
+	display: table-cell;
+	padding-left: 0px;
+}
+
+/* 
+==============================
+config_datos.php 
+==============================
+*/
+div.form-two{
+	width: 50%;
+	float: left;
+}
+
+div.form-two select{
+ width: 80%;
+ height: 50px;
+ border: 2px solid var(--bg-fondo);
+ background-color: #fff;
+ border-radius: 7px;
+ font-size: 1.0em;
+ font-size: 16px;
+}
+
+div.form-two input[type=date]{
+ width: 80%;
+ height: 50px;
+ border: 2px solid var(--bg-fondo);
+ background-color: #fff;
+ border-radius: 7px;
+ font-size: 16px;
+ text-align: center;
+ padding-top: 6px;
+}
+
+/* 
+==============================
+index.php 
+==============================
+*/
+div.control {
+	background-color: gray;
+	width: 50%;
+}
+
+h2.categories-title{
+ font-family: 'Poppins', sans-serif;
+ font-size: 0.9em;
+ position: absolute;
+ font-weight: bold;
+ padding-left: 10px;
+ color: var(--negro-letras);
+ text-transform: uppercase;
+}
+section.carrousel{
+ overflow: scroll;
+ padding-left: 10px;
+ position: relative;
+}
+section.carrousel form{
+ overflow: hidden;
+ display: inline-block;
+ cursor: pointer;
+ position: relative;
+}
+div.carrousel-complemet {
+	overflow: hidden;
+ display: inline-block;
+ cursor: pointer;
+ position: relative;
+ padding-right: 10px;
+}
+p.pupusas-tittle {
+ font-family: 'Poppins', sans-serif;
+	font-size: 0.5em;
+	text-align: center;
+	margin: 0px;
+	padding: 0px;
+	text-transform: uppercase;
+}
+div.carrousel-container{
+ white-space: nowrap;
+ margin: 55px 0px 0px 0px;
+}
+div.carrousel-item{
+ background-color: palevioletred;
+ width: 150px;
+ height: 200px;
+ border-radius: 20px;
+ overflow: hidden;
+ display: inline-block;
+ cursor: pointer;
+ position: relative;
+}
+img.carrousel-item-img{
+ width: 150px;
+ height: 200px;
+ object-fit: cover;
+}
+div.carrousel-item-details{
+ background: linear-gradient(to top, rgba(0, 0, 0, 0.9) 0%, rgba(0, 0, 0, 0) 100%);
+ font-size: 10px;
+ opacity: 0;
+ transition: 450ms opacity;
+ padding: 10px;
+ position: absolute;
+ top: 0px;
+ left: 0px;
+ right: 0px;
+ bottom: 0px;
+}
+.carrousel-item-details {
+ align-items: center;
+ background: linear-gradient(to top, rgba(0,0,0,0.9) 0%, rgba(0,0,0,0) 100%);
+ display: flex;
+ font-size: 0.9em;
+ flex-direction: column;
+ justify-content: flex-end;
+ position: absolute;
+ right: 0;
+ top: 0;
+ font-weight: bold;
+}
+div.carrousel-item div.carrousel-item-details {
+ opacity: 1;
+}
+p.carrousel-item-details--title {
+ color: var(--bg-fondo);
+ margin: 5px 0px 0px 0px;
+ font-size: 1.2em;
+ text-align: right;
+}
+div.number-input-detail input[type="number"] {
+ -webkit-appearance: textfield;
+ -moz-appearance: textfield;
+ appearance: textfield;
+}
+div.number-input-detail input[type=number]::-webkit-inner-spin-button,
+div.number-input-detail input[type=number]::-webkit-outer-spin-button {
+ -webkit-appearance: none;
+}
+div.number-input-detail {
+ border: none;
+ display: inline-flex;
+}
+div.number-input-detail,
+div.number-input-detail * {
+ box-sizing: border-box;
+}
+div.number-input-detail button {
+ outline:none;
+ -webkit-appearance: none;
+ background-color: var(--naranja-botones);
+ border: none;
+ align-items: center;
+ justify-content: center;
+ width: 20px;
+ height: 2rem;
+ cursor: pointer;
+ margin: 0;
+ position: relative;
+}
+div.number-input-detail button:before,
+div.number-input-detail button:after {
+display: inline-block;
+position: absolute;
+content: '';
+ width: 10px;
+ height: 2px;
+ background-color: #212121;
+ transform: translate(-50%, -50%);
+}
+div.number-input-detail button.plus:after {
+ transform: translate(-50%, -50%) rotate(90deg);
+}
+div.number-input-detail input[type=number] {
+ width: 20px;
+ border: none;
+ font-size: 1rem;
+ text-align: center;
+}
+div.cart {
+	float: right;
+	padding-left: 5px;
+}
+div.cart button {
+	font-size: 1.4em;
+	width: 32px;
+	height: 32px;
+	-moz-border-radius: 50%;
+	-webkit-border-radius: 50%;
+	border-radius: 50%;
+	border: none;
+ background-color: var(--naranja-botones);
+}
+div.controles{
+	position: relative;
+	z-index: 9;
+}
+span.control{
+	text-align: right;
+ display: block;
+}
+span.control button.botones{
+	border: none;
+	margin: 10px 5px 0px;
+	font-size: .9em;
+	font-weight: bold;
+	padding: 5px 10px;
+}
+span.control button.abrir{
+	background-color: transparent;
+}
+span.control button.carrito{
+	background-color: var(--naranja-botones);
+	border-radius: 7px;
+}
+section.first {
+	margin: -45px 0px 0px 0px;
+}
+div.herramientas {
+	display: none;
+	background-color: var(--bg-oscuro);
+	width: 95%;
+	height: 75px;
+	margin: 10px auto;
+	padding: 10px;
+	border-radius: 5px;
+
+}
+div.herramientas:active {
+	transition-duration: 3s;
+}
+div.form-two button{
+	font-size: 0.5em;
+	border: none;
+	color: var(--bg-fondo);
+	background-color: transparent;
+	font-weight: lighter;
+}
+div.contrl {
+	margin-top: 10px;
+}
+div.herramientas:active {
+	transition-duration: 3s;
+}
+/* 
+==============================
+pedido.php 
+==============================
+*/
+h2.informacion_pedido{
+ font-size: 0.6em;
+ position: absolute;
+ padding-left: 10px;
+ color: var(--negro-letras);
+}
+div.pedido_datos button[type=submit]{
+	margin: 90% 0px 0px 0px;
+}
+div.pedido_mensaje {
+	width: 80%;
+	margin: 10px auto;
+}
+div.pedido_detalle_icon{
+	width: 10%;
+	float: left;
+}
+div.pedido_detalle{
+	width: 90%;
+	float: left;
+}
+div.pedido_mensaje p{
+	text-align: left;
+	font-weight: bold;
+	font-size: 0.5em;
+ padding-left: 40px;
+}
+div.pedido_detalle_icon i{
+	font-size: 1.5em;
+ padding-top: 6px;
+	padding-left: 10px;
+}
+div.confims{
+	display: block;
+	margin-top: 80px;
+}
+div.confirmas input[type=time],
+div.confirmas input[type=date]{
+	text-align: center;
+	width: 80%;
+	font-size: 0.8em;
+	border: none;
+	background-color: transparent;
+	padding-left: 10px;
+}
+div.confirmas input[type="date"]::-webkit-inner-spin-button,
+div.confirmas input[type="date"]::-webkit-calendar-picker-indicator {
+ display: none;
+ -webkit-appearance: none;
+}
+div.detalles_productos{
+	margin-top: 10px;
+	width: 100%;
+	display: inline-block;
+	background-color: var(--bg-oscuro);
+	color: var(--bg-fondo);
+}
+div.detalles_productos table{
+	text-align: center;
+	padding: 20px 10px;
+	color: var(--bg-fondo);
+	width:100%;
+	margin:auto;
+	border-collapse:separate;
+	border-spacing:0;
+}
+div.detalles_productos table thead tr th{
+	text-align: center;
+}
+
+/* 
+==============================
+compras.php 
+==============================
+*/
+div.compras{
+	margin-top: 100px;
+}
+div.factr {
+	font-size: 0.4em;
+	text-align: left;
+}
+div.factl {
+	font-size: 0.4em;
+	text-align: right;
+}
+div.confrm_pedido{
+	font-size: 0.5em;
+	font-weight: bold;
+}
+div.compra_informacion{
+	width: 95%;
+	display: inline-block;
+	background-color: var(--blanco-default);
+	padding-bottom: 5px;
+	margin-bottom: 15px;
+}
+div.compra{
+	font-weight: bold;
+	font-size: 1.2em;
+	color: var(--negro-letras);
+}
+div.cmprlf {
+	font-size: 0.4em;
+	text-align: left;
+	float: left;
+	width: 75%;
+ margin-top: 10px;
+}
+div.cmprrg {
+	font-size: 0.8em;
+	text-align: right;
+	float: left;
+	width: 25%;
+}
+a.bgsolido{
+	background-color: var(--bg-fondo);
+	padding: 10px 0px;
+ bottom: -1px;
+}
+div.vacio{
+	font-size:0.7em;
+}
+div.cmprrg button[type="submit"]{
+	font-size: 0.8em;
+	color: var(--negro-letras);
+ border: none;
+ background-color: transparent;
+}
+div.factura{
+	margin-top: 0px;
+}
+
+/* 
+==============================
+detalle_compra.php 
+==============================
+*/
+
+div.factura_encabezado{
+	font-size: 0.8em;
+	padding: 5px;
+	text-align: left;
+}
+
+div.factura_encabezado hr{
+	width: 99%;
+	margin: 5px auto;
+	border: 1px solid var(--bg-fondo);
+}
+
+div.factura_encabezado p.descr{
+ margin: 0px;
+ font-size: 0.7em;
+}
+p.fotdet{
+ margin: 0px;
+ font-size: 1.7em;
+}
+p.fot{
+	padding-left: 10px;
+}
+
+/* 
+==============================
+h_comentario.php
+==============================
+*/
+h2.informacion_comentario {
+	text-align: left;
+	font-size: 0.8em;
+}
+div.comentario {
+	text-align: center;
+	font-size: 0.7em;
+}
+div.comentario input[type="radio"]{
+	margin: 0px 10px;
+	background-color: var(--negro-letras);
+}
+div.comentario textarea{
+	width: 90%;
+	height: 300px;
+	border: none;
+}
+div.comentario textarea::placeholder {
+ font-weight: lighter;
+ padding-left: 10px;
+ color: var(--bg-fondo);
+ font-size: 0.9em;
+}
+a.volver_comentario{
+	color: var(--negro-letras);
+}
+div.enviar_comentario button{
+ width: 100%;
+ font-size: 1em;
+ font-weight: bold;
+ background-color: var(--naranja-botones);
+ color: var(--negro-letras);
+ border-radius: 5px;
+}
+
+/* 
+==============================
+detalle_comentario.php 
+==============================
+*/
+div.contenido_mensaje{
+	border: 2px solid #eee;
+ margin: 10px;
+ padding: 5px 10px;
+ border-radius: 10px;
+}

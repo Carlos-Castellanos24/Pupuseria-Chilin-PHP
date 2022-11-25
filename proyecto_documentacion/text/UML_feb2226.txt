@@ -1,0 +1,29 @@
+Administrador de proyecto: Fernando Cuatro
+	
+	Roles de equipo.
+	DBA -> Rodolfo y Maria Jose	| Programador -> Marillita, Rogelio, Rodolfo	Diseñador -> Josesito, Fernando	| Control de calidad -> Fernando, Rodolfo
+	Documentador -> Fernando	| Analista -> Todos. 
+
+Avance de entrega [1]:
+	Empresa				| Aplicación dentro de la empresa (Que es lo que vamos hacer)
+	Cuestionario por cada rol
+
+	Puede inicar el diseño de la db	| Puede iniciar su desarrollo
+	Los datos que imprimira, osea los reportes. 
+	Informacion de los reportes que necesitara la base de datos. 
+
+	Diseño de la base de datos (Propuestas de tablas, con su tabla)
+
+Herramienta para la recopiacion de datos || Cuestionario para cada rol
+
+Caja		=> Rogelio || SI	|	Cocinero 1, Cocinero 2		=> Fernando || NO || Rodolfo
+Pedidos 	=> Marillita x2 || SI 	|	Seguridad 			=> Rodolfo x2 || NO 
+Atencióncliente => Maria Jose ||Rogelio |	Despacho		 	=> Josesito || SI
+Gerente, Dueño 	=> No			|	Meseros 			=> NO
+
+Aplicativo
+Nuestra aplicación se basa en hacer pedidos a la pupuseria, dando  dos opciones, comer en la pupuseria o para llevar. En la parte para llevar debe presentarse a traer su pedido a la pupuseria no contamos con repartidores. 
+Los pagos todos serán manuales de forma presencial, todos son en la pupuseria no contamos con pago electrónico.
+Para hacer pedidos tienes que registrarte. 
+La facturación se hará dependiendo del rol del usuario o del administrador. Cuando sea un usuario
+se generará y se descarga un archivo PDF con todos los datos de su factura. Y si es administrador  se entregara impresa la factura al cliente. Esto se definirá con el rol del usuario.

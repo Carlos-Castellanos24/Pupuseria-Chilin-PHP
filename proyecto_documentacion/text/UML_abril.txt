@@ -1,0 +1,29 @@
+| Entrega 2 |
+* Correciones del primer avance	(YA)
+* Diseño de formularios		(YA)
+* ****** de reportes		(YA)
+* ****** de Menu		(YA)
+
+Reporte para usuarios, la factura y el historial de compras. (YA)
+
+>> Se debe de manejar un standar
+	* Tipo de letra
+	* Tamaño
+	* Style
+	* Colores a usar (Que sea acorde) Institucionalizar
+	* Logo de tamaño que sea en el mismo lugar
+	* Textos que sean acordes y constantes
+
+Escrbir los colores, tipografías, etc. 
+
+Información digital y todo:
+
+INTEGRANTES EQUIPO
+
+Agregar boton de inicio para los reclamos
+Agregar boton de comentarios
+
+https://www.facebook.com/media/set/?vanity=johnnygomeztech&set=a.163463938952401
+
+Web APP progresive
+

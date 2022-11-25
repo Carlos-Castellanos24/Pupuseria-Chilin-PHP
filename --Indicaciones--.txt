@@ -1,0 +1,6 @@
+proyecto_documentacion
+Carpeta específicamente para la documentación del proyecto con todos los avances, documentos, archivos que trabajamos a lo largo del ciclo. 
+
+UML_chilin
+La carpeta contiene el proyecto completo de pupuseria chilin. Tanto el del administrador como el del usuario. Con su respectiva base de datos. 
+Esta carpeta tiene que ser manipulada desde el servidor local, para que pueda ser visualizada. 

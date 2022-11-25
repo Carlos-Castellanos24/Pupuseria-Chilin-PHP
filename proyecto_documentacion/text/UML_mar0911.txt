@@ -1,0 +1,65 @@
+tabla categoria ________________________________________________________________________
+id_cat | nombre_categoria
+1						| Pupusas Corrientes
+2						| Pupusas especialidad
+3 					| Reposteria // Maria Luisa, budin
+4						| Bebida fria // soda, jugo, cerveza
+5						| Bebida caliente
+
+tabla producto ________________________________________________________________________
+id_prod 	| id_cat | nombre_producto | cant_diponible | costo	| precio | estado
+1							 | 3						| Soda helada					| 54													| 0.35  | 0.50   | A
+2							 | 4						| Chocolate  					| 0														| 0.25  | 0.35   | A
+3							 | 3						| Maria Luisa  			| 20													| 0.25  | 0.35   | A
+4							 | 1						| Frijol y Queso 	| 0														| 0.55  | 0.75   | A
+5							 | 2						| Camaron							 	| 0														| 0.75  | 1.00   | A
+
+tabla pedido  ________________________________________________________________________
+id_pedido | id_cliente | id_prod | cantidad | fecha 						| hora        | estado
+1									| 3										| 4							| 3							 | 2021-02-07  | 18:00:00				| A
+2									| 3										| 2							| 2							 | 2021-02-11  | 17:00:00				| A
+3									| 1										| 1							| 4							 | 2021-02-11  | 17:00:00				| A
+4									| 2										| 5							| 2							 | 2021-02-07  | 18:00:00				| A
+5									| 2										| 2							| 1							 | 2021-02-11  | 17:00:00				| A
+
+tabla cliente ________________________________________________________________________
+id_cliente	| nombre				| apellido | rol 
+1		        | Estefany 	| Ramirez  | U   					// Usuario
+2		        | Jose				 	| Ruano    | U   					// Usuario
+3		        | Marillita	| Zamora   | U   					// Usuario
+4		        | Fernando 	| Cuatro   | A   					// administrador
+
+tabla factura ________________________________________________________________________
+id_fact	| id_pedido | fecha 														| total_pagar | tipo_factura | estado
+1							| 1    	    | 2021-03-02 20:47:33 | 2.95								| I 											| C      			// confirmado
+2							| 3    	    | 2021-03-04 16:04:53 | 2.35								| E 											| R      			// Reclamo
+
+tabla pago	   ________________________________________________________________________
+id_pago | id_factura | fecha 														| pago_cliente | vuelto	| estado 
+1 						| 1										| 2021-01-05 13:24:63 | 3.00									| 0.05			| F 												// Pago finalizado
+2 						| 2										| 2021-02-06 18:44:33 | 2.50									| 0.15			| F 												// Pago finalizado
+
+tabla despacho		________________________________________________________________________
+id_desp | id_pago | id_pedido | fecha 														| comentario    													 | estado 
+1       | 2							| 5									| 2021-02-07 17:03:23 | Pedido entregado finalizado | E 						   //Entregado
+1       | 1							| 1									| 2021-02-09 18:11:23 | Pendiente																		 | P 						   //Pendiente
+
+tabla comentario		________________________________________________________________________
+id_comentario | id_cliente | id_pedido | fecha               | tipo_comentario | asunto 													| comentario               									| estado |
+1													| 3										| 1								 | 2021-02-07 17:03:23	| B   // bueno				|	Buen servicio							| Espero volver pronto														| L // Leido
+1													| 3										| 1								 | 2021-02-07 17:03:23	| M   // malo 				|	No me gustaron      | Las pupusas estaban muy grandes			| R // Revicion
+1													| 3										| 1								 | 2021-02-07 17:03:23 | R   // reclamo 	|	Me dieron otra      | Me dieron una de Queso         			| P // Proceso | F // finalizado
+
+tabla reserva		________________________________________________________________________
+id_reservacion | id_cliente | estado 
+1														| 1									 | A
+2														| 3									 | A
+
+tabla mesa	________________________________________________________________________
+id_mesa | id_reservacion | id_pedido | cant_sillas | fecha 						| hora_inicio | hora_final  | comentario                  | estado
+1 						| 1														| 3         | 4										 | 2021-02-07  | 18:00:00				| 19:00:00 		 | No quiere salsa en la mesa  | A
+2 						| 2														| 2         | 2										 | 2021-02-11  | 17:00:00				| 20:00:00 		 | Quiere una velita encendida | A
+
+
+Quiero saber, cuantos pedidos ha hecho marillita 
+SELECT * FROM pedido WHERE id_cliente = 3

@@ -1,0 +1,16 @@
+
+Cancelación de un pedido || confirmación del pedido
+
+
+Pago <<>> factura 1
+factura <<>> Pago 1 
+
+
+Categoría de los productos
+
+
+Tabla de cambio (Osea el vuelta)
+
+
+
+ Tipo de facturación

@@ -1,0 +1,37 @@
+=> Fernando Cuatro, esto será rápido. (generalidades)
+Roles dentro del equipo de trabajo
+Administrador del proyecto
+Empresa	
+Aplicación dentro de la empresa	
+Aplicación para clientes	
+Limitaciones dentro de la aplicación para clientes	
+Reportes para usuarios dentro de la aplicación
+Aplicación para administradores
+Reportes administrativos
+Limitaciones dentro de la aplicación para administradores
+Roles identificados dentro de la empresa
+Cuestionarios para cada Rol y visualizar los documentos
+===============================
+=> Rodolfo
+Diagrama entidad relaciona
+Diagrama relacional
+===============================
+=> Rogelio 
+Diagrama de la base de datos ofrecido por MySQL
+Base de datos del proyecto chilin_db
+===============================
+Diagrama de caso de uso		=> Rodolfo 
+Diagrama de actividades		=> Danilo 
+Diagrama de estado		=> Josesito
+Revisión de cuestionarios	=> Marillita
+===============================
+
+Presentación => Tres de progra, pero pendiente.
+Fernando ==> Mostrar la pagina principal
+JOSESITO ==> Registro
+Fernando ==> Login
+JOSESITO ==> config datos.
+Fernado	 ==> Pagina de inicio
+
+Rogelio el administrador.
+

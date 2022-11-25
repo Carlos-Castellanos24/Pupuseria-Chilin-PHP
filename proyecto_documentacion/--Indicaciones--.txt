@@ -1,0 +1,26 @@
+﻿Se listan todos los documentos de avances que fueron entregados en la asignatura de UML, empezado con el prefijo 'a1', 'a2'... Esto hace alusión a el avance 1, avance 2 y así sucesivamente hasta la ultima entrega.
+Junto con la presentación final del proyecto. se presenta en .pptx y en .pdf para mayor accesibilidad.
+
+Se explica el contenido de cada carpeta:
+
+cuestionarios_roles
+Se presentan todos los documentos .docx en los que se trabajaron los cuestionarios con los cuales tomamos los requerimientos y fundamentos para el proyecto realizado. 
+
+database
+L aportes_db: Era la fase inicial del desarrollo de la base de datos y se requirió de aportes de ideas iniciales, aquí están estos documentos. 
+L diagramas_db: Los diagramas requeridos para la base de datos, tanto el entidad relación como el relacional. los que tienen llevan la palabra 'Final' son los oficiales, los demás son versiones con las que hemos venido trabajando. 
+L machotes_db: Se presentan .txt con machotes de campos y tablas elaboradas antes de la base de datos, a modo de prueba y avance.
+En esta carpeta se presentan 5 archivos .sql, en los que trabajamos la base de datos. El archivo que dice 'Final' es la base de datos del proyectos, los demás son archivos correspondientes a versiones trabajadas.
+
+diagramas_UML
+Documentamos todos los diagramas realizados, en la asignatura; los cuales son utilizados en las avances entregados, presentamos diagrama de: Actividades, caso de uso, estado, y reporte de cuestionarios. 
+
+diccionario_datos
+Diccionario de datos de toda la base de datos del proyecto de pupuseria chilin
+
+mockups
+L material: Todas las imágenes e iconos utilizadas para el diseño de mockups están en esta carpeta.
+La documentación en archivo .ai y exportado a .pdf para que sea mas accesible al visualizar.  
+
+text
+En esta carpeta están archivos .txt de las notaciones en reunión o pendientes de las que fuimos trabajando todo el proyecto y el desarrollo de el, junto con opiniones, dudas y sugerencias para el proyecto.

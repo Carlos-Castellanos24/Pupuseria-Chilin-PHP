@@ -1,0 +1,92 @@
+cliente(
+idCliente int,
+nombre varchar,
+apellido varchar,
+edad int,
+dui varchar,
+nit varchar,
+url_imagen_perfil varchar --se copia la direccion de las carpetas donde esta almacenada,
+genero char,
+rol varchar
+)
+
+producto(
+idProducto int,
+nombre varchar,
+precio decimal (4,2),
+stock int(en caso se pueda contar),
+fech_expiracion date,
+fech_que_llego date
+)
+categoria(
+idCategoria int,
+idProducto int,
+nomb_categoria varchar
+)
+
+pedido(
+idPedido int,
+idcliente int,
+idProducto int,
+estado char,
+cantidad int,
+)
+
+detalle_factu(
+idDetalle_fatu int,
+idProducto int,
+cantidad int,
+precio decimal (4,2),
+fecha date,
+ttlPago decimal (4,2)
+)
+
+factura(
+idFactura int ,
+idCliente int,
+idDetalle_fatu int,
+total deciaml (4,2)
+)
+
+pago(
+idPago int,
+idFactura int,
+total decimal (4,2),
+billete_Ingresado decimal (4,2),
+vuelto decimal(4,2),
+estado char
+)
+
+despacho(
+idDespacho int,
+idFactura int,
+idPago int,
+fecha datetime,
+estado char
+)
+
+reserva(
+idReserva int,
+idcliente int,
+estado char
+)
+
+detalle_mesa(
+idDetalleMesa int,
+idReservacion int,
+idPedido int,
+estado_mesa char,
+cantSillas int,
+fecha date,
+hora_inicio time,
+hora_dinal time
+)
+
+comentario(
+idComentario int,
+idCliente int,
+idPedido int,
+fechaComen datetime,
+tipComen char,
+estado char
+)

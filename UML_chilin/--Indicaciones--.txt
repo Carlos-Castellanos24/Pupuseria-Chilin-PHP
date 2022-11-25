@@ -1,0 +1,8 @@
+Se presenta la base de datos final del proyecto en la carpeta:
+L database
+
+Se presenta el proyecto para el administrador en:
+L proyecto_administrador
+
+Se presenta el proyecto para el usuario en:
+L proyecto_clientes

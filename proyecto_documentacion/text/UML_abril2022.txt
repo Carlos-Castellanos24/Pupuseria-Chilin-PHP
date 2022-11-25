@@ -1,0 +1,18 @@
+
+
+>> Formularios con puro HTML si estilos
+
+-- Entrega el dia sábado 24 de abril -- 
+>> Que los dos formularios de registro manden los datos 
+-- Josesito (registro.php)  ** La contraseña debe de ir encriptada, en el curso en el proyecto de login hace eso el joven.
+-- Danilo   (config_datos.php) 
+
+-- Entrega el dia sábado 25 de abril -- 
+-- (Roldolfo y Rogelio)
+>> Validamos el inicio de sesión en la página de login.php que 
+   nos redirigirá a la página del índex.php con el bienvenido y nombre de usuario
+  ** Al validar el login tienen que tener en cuenta que la contraseña esta encriptada.
+
+
+
+>> Validamos el envio de datos completos a la base de datos (Pendientes)(La vamos a trabajar luego de sus entregas)
